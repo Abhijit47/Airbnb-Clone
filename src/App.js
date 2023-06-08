@@ -1,16 +1,18 @@
 import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
-import Header from './Components/Header/Header';
-import FeatureCard from './Components/Features/FeatureCard';
-import PriceCard from './Components/Price/PriceCard';
+import { Route, Routes } from 'react-router-dom';
+import Search from './Components/Search/Search';
+import HomePage from './Components/Home/HomePage';
 
 const App = () => {
   return (
     <>
+      {/* TOP LEVEL COMPONENT */}
       <Navbar />
-      <Header />
-      <FeatureCard />
-      <PriceCard />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/search' Component={Search} />
+      </Routes>
     </>
   );
 };

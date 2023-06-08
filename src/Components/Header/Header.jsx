@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { HEADER_IMAGES } from '../../assets';
-import Search from '../Search/Search';
 import './Header.css';
 
 
@@ -13,9 +12,6 @@ const headerStyle = {
 const Header = () => {
   return (
     <>
-      <Routes>
-        <Route path='/search' element={<Search />} />
-      </Routes>
       <div className='d-lg-flex d-md-flex d-sm-flex d-flex justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-center flex-lg-nowrap flex-md-nowrap flex-sm-wrap flex-wrap gap-lg-4 gap-md-3 gap-sm-2 gap-2'>
         <div className='bg-dark row col-lg-4 col-md-4 col-sm-12 col-12 p-5'>
           <h1 className='text-light'>Go Near</h1>

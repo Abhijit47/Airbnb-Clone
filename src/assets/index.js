@@ -18,4 +18,13 @@ const PRICE_IMAGES = {
   priceImage3: require('./price3.jpg')
 };
 
-export { LOGO, HEADER_IMAGES, FEATURE_IMAGES, PRICE_IMAGES };
+const HOTEL_IMAGES = {
+  hotelImage1: require('./hotel/hotel1.jpg'),
+  hotelImage2: require('./hotel/hotel2.webp'),
+  hotelImage3: require('./hotel/hotel3.webp'),
+  hotelImage4: require('./hotel/hotel4.webp'),
+  hotelImage5: require('./hotel/hotel5.jpg'),
+  hotelImage6: require('./hotel/hotel6.webp'),
+};
+
+export { LOGO, HEADER_IMAGES, FEATURE_IMAGES, PRICE_IMAGES, HOTEL_IMAGES };
